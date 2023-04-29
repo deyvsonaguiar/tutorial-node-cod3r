@@ -10,11 +10,11 @@ test('Deve conhecer as principais assertivas do Jest', () => {
 });
 
 test('Deve saber trabalhar com objetos', () => {
-  const obj = {name: 'Deyvson', email: 'deyvsonaguiar@mail.com'};
+  const obj = { name: 'Deyvson', email: 'deyvsonaguiar@mail.com' };
   expect(obj).toHaveProperty('name');
   expect(obj).toHaveProperty('name', 'Deyvson');
   expect(obj.name).toBe('Deyvson');
 
-  const obj2 = {name: 'Deyvson', email: 'deyvsonaguiar@mail.com'};
+  const obj2 = { name: 'Deyvson', email: 'deyvsonaguiar@mail.com' };
   expect(obj).toEqual(obj2);
 });
