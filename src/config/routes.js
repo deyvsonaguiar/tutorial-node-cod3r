@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  app.routes('/users')
+  app.route('/users')
     .get(app.routes.users.findAll)
     .post(app.routes.users.create);
 };
