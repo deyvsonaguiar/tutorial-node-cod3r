@@ -8,6 +8,7 @@ module.exports = {
       password: 'postgres',
       database: 'barriga',
     },
+    jsonbSupport: true,
     migrations: {
       directory: 'src/migrations',
     },

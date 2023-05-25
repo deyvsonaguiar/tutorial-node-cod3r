@@ -1,8 +1,14 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const express = require('express');
-const consign = require('consign');
 
 const app = express();
+const consign = require('consign');
+const knex = require('knex');
+const knexfile = require('../knexfile');
+
+// TODO - criar chaveamento dinâmico
+app.db = knex(knexfile.test);
+
 consign({ cwd: 'src', verbose: false })
   .include('./config/middlewares.js')
   .then('./routes')
